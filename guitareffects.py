@@ -23,7 +23,7 @@ class GEcore():
         name = input('Enter the audio filename you want to read including the extension: ')
         print('----------------------')
         filename, file_ext = os.path.splitext(name)
-        filename = os.getcwd() + 'guitar-effects/audiofiles/' + name
+        filename = os.getcwd() + '/guitar-effects/audiofiles/' + name
         self.audiofilename = filename
         audiofile = pydub.AudioSegment.from_file(filename, file_ext)
         audiofile = audiofile.fade_out(2000)
