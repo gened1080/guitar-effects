@@ -43,7 +43,7 @@ class GEcore():
         
     def plot_signal(self, audio_signal, pflag):
         if pflag:
-            p = figure(plot_width=900, plot_height=500, title='Audio Signal', 
+            p = figure(width=900, height=500, title='Audio Signal', 
                        x_axis_label='Time (s)', y_axis_label='Amplitude (arb. units)')
             time = np.linspace(0, np.shape(audio_signal)[1] / self.framerate, np.shape(audio_signal)[1])
             m = int(np.shape(audio_signal)[1] / 2000)
